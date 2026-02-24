@@ -1,0 +1,10 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def ana_sayfa():
+    return "<h1>Selam Ali!</h1><p>Bu senin ilk web siten. Afyon'a selamlar!</p>"
+
+if __name__ == "__main__":
+    app.run()
