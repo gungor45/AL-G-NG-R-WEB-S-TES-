@@ -1,15 +1,4 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route("/")
-def ana_sayfa():
-    return "<h1>Selam Ali!</h1><p>Bu senin ilk web siten. Afyon'a selamlar!</p>"
-
-if __name__ == "__main__":
-
-    app.run()
-from flask import Flask
+rom flask import Flask
 
 app = Flask(__name__)
 
@@ -17,15 +6,20 @@ app = Flask(__name__)
 def home():
     return """
     <html>
-    <body style="background-color: #f0f0f0; text-align: center; font-family: sans-serif; padding-top: 50px;">
-    <h1 style="color: #2c3e50;">Ali'nin İlk Web Sitesi</h1
-    <p>Afyon Kocatepe Üniversitesi'nde Python öğreniyorum!</p>
-    <div style="background-color: #ffffff; border-radius: 10px; padding: 20px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-<p>Bu site artık tüm dünyadan erişilebilir.</p>    
-</div>
-</body>
-</html>
-"""
+        <body style="background-color: #f4f4f9; text-align: center; font-family: Arial, sans-serif; padding: 50px;">
+            <h1 style="color: #333;">Afyon'dan Dünyaya: Ali'nin Web Sitesi</h1>
+            <p style="font-size: 18px;">Bu site Python ve Flask kullanılarak yapılmıştır.</p>
+            
+            <div style="margin: 20px;">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" 
+                     alt="Kodlama Resmi" 
+                     style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); width: 80%; max-width: 500px;">
+            </div>
+
+            <p>Öğrenmeye devam ediyorum!</p>
+        </body>
+    </html>
+    """
 
 if __name__ == "__main__":
-app.run()
+    app.run()
